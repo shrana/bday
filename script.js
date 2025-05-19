@@ -66,3 +66,12 @@ document.addEventListener("click", () => {
     }).catch(() => {});
   }
 }, { once: true });
+
+// Fade out heading as you scroll
+window.addEventListener('scroll', () => {
+  const heading = document.getElementById('fade-heading');
+  const scrollY = window.scrollY;
+  const fadePoint = 300; // adjust for when fade ends
+  const opacity = Math.max(1 - scrollY / fadePoint, 0);
+  heading.style.opacity = opacity;
+});
