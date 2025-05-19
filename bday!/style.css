@@ -1,0 +1,129 @@
+body {
+  font-family: 'Homemade Apple', cursive;
+  background: #F6F2D9;
+  color: #3a3a3a;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Countdown section */
+#countdown-container {
+  margin-top: 100px;
+  background-color: #E6F6DC;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#countdown {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #3a3a3a;
+}
+
+/* Subtitles */
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #AAD3DB;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-family: 'Homemade Apple', cursive;
+}
+
+button:hover {
+  background-color: #C4D4EF;
+}
+
+/* Notes */
+.note {
+  margin: 10px auto;
+  max-width: 300px;
+  padding: 15px;
+  border: 2px solid #D3ECD9;
+  border-radius: 12px;
+  background-color: #E6F6DC;
+  display: none;
+  color: #3a3a3a;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.1rem;
+}
+
+/* Gallery */
+.gallery {
+  background-color: #D3ECD9;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo img {
+  width: 150px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.caption {
+  font-family: Calibri, sans-serif;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Floating emoji animation */
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100px); opacity: 0; }
+}
+
+.heart {
+  position: absolute;
+  font-size: 1.8rem;
+  animation: float 4s ease-in infinite;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* Music player */
+#music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #C4D4EF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#music-toggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: white;
+}
