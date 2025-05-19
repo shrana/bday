@@ -2,7 +2,7 @@ const countdownEl = document.getElementById("countdown");
 const mainContent = document.getElementById("main-content");
 const countdownContainer = document.getElementById("countdown-container");
 
-const releaseDate = new Date("May 20, 2025 00:00:00").getTime();
+const releaseDate = new Date("May 22, 2025 00:00:00").getTime();
 
 const interval = setInterval(() => {
   const now = new Date().getTime();
