@@ -1,16 +1,32 @@
 body {
   font-family: 'Homemade Apple', cursive;
-  background: #F6F2D9;
+  background: #e1f7da; /* Soft mint background */
   color: #3a3a3a;
   text-align: center;
   padding: 20px;
   overflow-x: hidden;
 }
 
-/* Countdown section */
+/* Full-screen birthday header */
+#birthday-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cfe2f3; /* Soft blue header background */
+  position: relative;
+  z-index: 1;
+}
+
+#fade-heading {
+  font-size: 2.5rem;
+  transition: opacity 0.2s ease-out;
+}
+
+/* Countdown */
 #countdown-container {
   margin-top: 100px;
-  background-color: #E6F6DC;
+  background-color: #cbe6c0; /* Fresh green */
   padding: 40px 20px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -19,10 +35,9 @@ body {
 #countdown {
   font-size: 1.5rem;
   margin-top: 10px;
-  color: #3a3a3a;
 }
 
-/* Subtitles */
+/* Subtitle */
 .subtitle {
   font-size: 1.1rem;
   margin-bottom: 20px;
@@ -30,7 +45,7 @@ body {
 
 /* Buttons */
 button {
-  background-color: #AAD3DB;
+  background-color: #b0d79f; /* Sage green */
   border: none;
   padding: 12px 24px;
   margin: 10px;
@@ -44,7 +59,7 @@ button {
 }
 
 button:hover {
-  background-color: #C4D4EF;
+  background-color: #b6cfe6; /* Periwinkle blue */
 }
 
 /* Notes */
@@ -52,9 +67,9 @@ button:hover {
   margin: 10px auto;
   max-width: 300px;
   padding: 15px;
-  border: 2px solid #D3ECD9;
+  border: 2px solid #b0d79f;
   border-radius: 12px;
-  background-color: #E6F6DC;
+  background-color: #cbe6c0;
   display: none;
   color: #3a3a3a;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -64,7 +79,7 @@ button:hover {
 
 /* Gallery */
 .gallery {
-  background-color: #D3ECD9;
+  background-color: #cbe6c0;
   border-radius: 16px;
   padding: 20px;
   margin-top: 40px;
@@ -109,7 +124,7 @@ button:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #C4D4EF;
+  background: #b6cfe6;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -126,19 +141,4 @@ button:hover {
   font-size: 1.4rem;
   cursor: pointer;
   color: white;
-}
-
-#birthday-header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #F6F2D9;
-  position: relative;
-  z-index: 1;
-}
-
-#fade-heading {
-  font-size: 2.5rem;
-  transition: opacity 0.2s ease-out;
 }
